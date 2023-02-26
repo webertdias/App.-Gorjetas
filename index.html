@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>App. Gorjetas</title>
 </head>
+
+<header>
+    <h1>SPLITTER</h1>
+</header>
+
 <body>
+    <div class="main">
+    <form action="" name="calculadora">
+
+        <h2>Conta</h2><br>
+        <input type="number" id="entrada" placeholder="R$">
+
+        <div class="porcentagem">
+
+        <h2>Selecione o tipo %</h2><br>
+        <button onclick="cincoPorCento()">5%</button>
+        <button onclick="dezPorCento()">10%</button>
+        <button onclick="quinzePorCento()">15%</button>
+        <button onclick="vinteCincoPorCento()">25%</button>
+        <button onclick="cinquentaPorCento()">50%</button>
+        <button>Cliente</button>
+
+        </div>    
+
+        <p>O Nº de Pessoas</p>
+
+        <P>O total de Gorjetas R$</P>
+
+        
+        <p O Resultado é id="resultado" ></p>        
+
+        <input type="reset" name="Reset" value="Reset">
+
+    </form>
+
     
+
+    </div>
 </body>
 </html>
