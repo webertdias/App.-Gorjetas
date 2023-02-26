@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="PT-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>App. Gorjetas</title>
 </head>
+
+<body>
 
 <header>
     <h1>SPLITTER</h1>
 </header>
 
-<body>
     <div class="main">
-    <form action="" name="calculadora">
+        <form name="calculadora">
 
-        <h2>Conta</h2><br>
-        <input type="number" id="entrada" placeholder="R$">
+            <h2>Conta</h2><br>
+            <input type="number" id="entrada" placeholder="R$">
 
-        <div class="porcentagem">
+            <div class="porcentagem">
 
-        <h2>Selecione o tipo %</h2><br>
-        <button onclick="cincoPorCento()">5%</button>
-        <button onclick="dezPorCento()">10%</button>
-        <button onclick="quinzePorCento()">15%</button>
-        <button onclick="vinteCincoPorCento()">25%</button>
-        <button onclick="cinquentaPorCento()">50%</button>
-        <button>Cliente</button>
+                <h2>Selecione o tipo %</h2><br>
+                <button onclick="cincoPorCento()">5%</button>
+                <button onclick="dezPorCento()">10%</button>
+                <button onclick="quinzePorCento()">15%</button>
+                <button onclick="vinteCincoPorCento()">25%</button>
+                <button onclick="cinquentaPorCento()">50%</button>
+                <button>Cliente</button>
 
-        </div>    
+            <h2>O Nº de Pessoas</h2>
+            <input type="number">
 
-        <p>O Nº de Pessoas</p>
+            </div>
 
-        <P>O total de Gorjetas R$</P>
+            <div>
+            <p>O total de Gorjetas R$</p>
 
-        
-        <p O Resultado é id="resultado" ></p>        
 
-        <input type="reset" name="Reset" value="Reset">
+            <p id="resultado">O Resultado é</p>
 
-    </form>
+            <input type="reset" name="Reset" value="Reset">
+            
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 
     
-
-    </div>
 </body>
+
 </html>

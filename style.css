@@ -16,3 +16,10 @@ form{
 
 }
 
+.respostas{
+    background-color: navy;
+    height: 300px;
+    width: 200px;
+    margin-top: 100pt;
+    margin-left: 800px;
+}
