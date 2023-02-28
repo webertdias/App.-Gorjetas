@@ -1,25 +1,42 @@
-body{
-    background-color:lightblue ;
+header{
+    position: relative;
+    display:grid;
+    text-align:center;
+    margin-top: 50pt;
+    margin-left: -400px;
 }
 
-h1{
-    margin-top: 80pt;
-    text-align: center;
+body{
+    position:relative;
+    display:block;
+    background-color:lightblue ;
+    min-width: 100%;
+    max-width: 800px;
+    margin-left: 200pt;
 }
 
 form{
+    position: relative;
+    display: block;
     background-color: white;
+    max-width: 840px;
     height: 400px;
-    width: 750px;
-    margin-top: 100pt;
-    margin-left: 400px;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 200pt;
+}
 
+button{
+    background-color:hsl(183, 100%, 15%);
+}
+
+.porcentagem{
+    display:contents;
+    align-items: flex-start;
 }
 
 .respostas{
-    background-color: navy;
-    height: 300px;
-    width: 200px;
-    margin-top: 100pt;
-    margin-left: 800px;
+    display: contents;
+    align-items:flex-end;
 }
+

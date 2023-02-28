@@ -1,42 +1,51 @@
 
             const entrada = document.querySelector('#entrada')
-            const resultado = document.querySelector('#resultado')
+            const gorjetas = document.querySelector('#gorjetas')
+            const pessoas = document.querySelector('#pessoas')
+            const dividido = document.querySelector('#dividido')
 
             function cincoPorCento(){
                 event.preventDefault();
-                const porcentagem = parseFloat(entrada.value) / 100 *5;
-                resultado.innerHTML += parseInt(entrada.value) + porcentagem;
+                const porcentagem = (parseFloat(entrada.value) * 5) / 100;
+                gorjetas.innerHTML += porcentagem;
+                dividir();
             }
 
-            function dezPorCento() {
+            function dezPorCento(){
                 event.preventDefault();
-                console.log(resultado.innerHTML)
-                const porcentagem = (parseInt(entrada.value) / 100) * 10;
-                resultado.innerHTML += parseInt(entrada.value) + porcentagem;
-               
+                const porcentagem = (parseFloat(entrada.value) * 10) / 100;
+                gorjetas.innerHTML += porcentagem;
+                dividir();
             }
-            function quinzePorCento() {
+
+            function quinzePorCento(){
                 event.preventDefault();
-                console.log(resultado.innerHTML)
-                const porcentagem = (parseInt(entrada.value) / 100) * 15;
-                resultado.innerHTML += parseInt(entrada.value) + porcentagem;
-               
-            }
-            function vinteCincoPorCento() {
-                event.preventDefault();
-                console.log(resultado.innerHTML)
-                const porcentagem = (parseInt(entrada.value) / 100) * 25;
-                resultado.innerHTML += parseInt(entrada.value) + porcentagem;
-               
-            }
-            function cinquentaPorCento() {
-                event.preventDefault();
-                console.log(resultado.innerHTML)
-                const porcentagem = (parseInt(entrada.value) / 100) * 50;
-                resultado.innerHTML += parseInt(entrada.value) + porcentagem;
-               
+                const porcentagem = (parseFloat(entrada.value) * 15) / 100;
+                gorjetas.innerHTML += porcentagem;
+                dividir();
             }
             
+            function vinteCincoPorCento(){
+                event.preventDefault();
+                const porcentagem = (parseFloat(entrada.value) * 25) / 100;
+                gorjetas.innerHTML += porcentagem;
+                dividir();
+            }
+            
+            function cinquentaPorCento(){
+                event.preventDefault();
+                const porcentagem = (parseFloat(entrada.value) * 50) / 100;
+                gorjetas.innerHTML += porcentagem;
+                dividir();
+            }
+
+
+            function dividir(){
+                const divisao = parseFloat(entrada.value) / parseFloat(pessoas.value);
+                dividido.innerHTML = divisao;
+            }
+
+           
             
            
            
