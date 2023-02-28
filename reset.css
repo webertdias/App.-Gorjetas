@@ -16,23 +16,23 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 30px;
-	padding: 10px;
-	border: 30px;
+	margin: 20pt 30pt;
+	padding: 0;
+	border: 0;
 	font-size: 100%;
-	font:0;
-	vertical-align: baseline;
+	font: inherit;
+	vertical-align:text-top;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: inline-block;
+	display: block;
 }
 body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style:none;
 }
 blockquote, q {
 	quotes: none;

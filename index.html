@@ -18,36 +18,36 @@
 
     <div class="main">
         <form name="calculadora">
+            <fieldset class="ladoesq">
+                    <h2>Conta</h2>
+                    <input type="number" id="entrada" placeholder="R$">
 
-            <h2>Conta</h2><br>
-            <input type="number" id="entrada" placeholder="R$">
+                    <div class="porcentagem">
 
-            <div class="porcentagem">
+                        <h2>Selecione o tipo %</h2>
+                        <button onclick="cincoPorCento()">5%</button>
+                        <button onclick="dezPorCento()">10%</button>
+                        <button onclick="quinzePorCento()">15%</button><br>
+                        <button onclick="vinteCincoPorCento()">25%</button>
+                        <button onclick="cinquentaPorCento()">50%</button>
+                        <button id="cliente" >Cliente</button><br><br><br>
 
-                <h2>Selecione o tipo %</h2><br>
-                <button onclick="cincoPorCento()">5%</button>
-                <button onclick="dezPorCento()">10%</button>
-                <button onclick="quinzePorCento()">15%</button>
-                <button onclick="vinteCincoPorCento()">25%</button>
-                <button onclick="cinquentaPorCento()">50%</button>
-                <button>Cliente</button>
+                         <h2>Nº de Pessoas</h2>
+                         <input type="number" id="pessoas" placeholder="pessoa">
+                    </div>    
+            </fieldset>
+            <fieldset class="ladodir">
+                            
+                    <p id="gorjetas">O total de Gorjetas R$ </p>
 
-            <h2>O Nº de Pessoas</h2>
-            <input type="number" id="pessoas">
+                    <p id="dividido">O Valor é de</p>    
 
-            </div>
-
-            <div class="respostas">
+                    <input type="reset" value="Reset">
+                    
+                
+            </fieldset>
+             
             
-            <p>O total de Gorjetas R$</p>
-            <p id="gorjetas" ></p>
-
-            <p>O Valor é </p>    
-            <p id="dividido"></p>
-
-            <input type="reset" name="Reset" value="Reset">
-            
-            </div>
         </form>
     </div>
 

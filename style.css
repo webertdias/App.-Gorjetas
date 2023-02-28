@@ -1,42 +1,104 @@
 header{
     position: relative;
-    display:grid;
+    display:block;
     text-align:center;
+    margin: auto;
     margin-top: 50pt;
-    margin-left: -400px;
+    color:darkslategray;
+    font-weight:bold;
 }
 
 body{
-    position:relative;
-    display:block;
+    display:grid;
     background-color:lightblue ;
-    min-width: 100%;
-    max-width: 800px;
-    margin-left: 200pt;
+    min-width: 375px;
+    max-width: 1440px;
 }
 
 form{
-    position: relative;
-    display: block;
     background-color: white;
-    max-width: 840px;
     height: 400px;
-    width: 600px;
+    width: 800px;
     border-radius: 10px;
-    margin-left: 200pt;
+    margin: auto;
+    text-align: left;
+    align-items: center;
 }
+
 
 button{
     background-color:hsl(183, 100%, 15%);
+    border-color:hsl(183, 100%, 15%) ;
+    color:white;
+    border-radius: 5px;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: none;
+    font-weight: bold;
 }
 
-.porcentagem{
-    display:contents;
-    align-items: flex-start;
+h2{
+    margin-left: 10px;
 }
 
-.respostas{
-    display: contents;
-    align-items:flex-end;
+fieldset{
+    margin-top: 50px;
+}
+
+.ladoesq{
+    display: inline-block;
+    float: left;
+    margin: 10px 20px;
+    padding: 10px 10px;
+    border: none;
+}
+
+.ladodir{
+    display: inline-block;
+    float: right;
+    background-color:hsl(183, 100%, 15%) ;
+    width: 300px;
+    height: 350px;
+    padding: 10px 10px;
+    margin: 15px 20px;
+    border-radius: 4px;
+    border:none;
+}
+
+#cliente{
+    background-color: white;
+    color: darkcyan;
+    border: blue;
+}
+
+input{
+    text-align: left;
+    border-radius: 3px;
+    padding: 5px 50px;
+}
+
+button:hover{
+    display: inline-block;
+    background-color: aquamarine;    
+    color: hsl(183, 100%, 15%) ;
+}
+
+p{
+    color:white;
+    font-size: 24px;
+}
+
+input[type ="reset"]{
+    position: absolute;
+    text-align: center;
+    color:darkcyan;
+    font-size: 20px;
+    background-color: aquamarine;
+    padding: 10px 120px;
+    border: none;
+    font-weight: bold;
+    margin-top: 100px;
 }
 
